@@ -1,0 +1,13 @@
+namenode: hdfs://zzhang-2.vpc.cloudera.com:8020/
+
+kerberos:
+  realm: ADV.SEC.CLOUDERA.COM
+  kdc: w2k19-1.adv.sec.cloudera.com
+  user: frank@ADV.SEC.CLOUDERA.COM
+  keytab: src/main/resources/frank3.keytab
+  principal:
+    pattern: hdfs/zzhang-2.vpc.cloudera.com@ADV.SEC.CLOUDERA.COM
+
+directories: >
+  /tmp,
+  /hbase
